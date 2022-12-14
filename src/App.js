@@ -1,17 +1,21 @@
 import React, { useState } from "react";
-import About from "./components/About";
 import Nav from "./components/Nav";
+import Header from "./components/Header";
+import Page from "./components/Page";
 
 function App() {
-  const categories = useState([
+  const [categories] = useState([
     {
-      name: "Projects",
+      name: "about me",
     },
     {
-      name: "Contact Me",
+      name: "projects",
     },
     {
-      name: "Resume",
+      name: "contact me",
+    },
+    {
+      name: "resume",
     },
   ]);
 
@@ -19,14 +23,17 @@ function App() {
 
   return (
     <div>
-      <Nav
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-        categories={categories}
-      ></Nav>
+      <Header>
+        <Nav
+          setCurrentCategory={setCurrentCategory}
+          currentCategory={currentCategory}
+          categories={categories}
+        ></Nav>
+      </Header>
       <main>
-        <About />
+        <Page currentCategory={currentCategory}></Page>
       </main>
+      {/* footer */}
     </div>
   );
 }
