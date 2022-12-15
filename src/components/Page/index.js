@@ -2,8 +2,8 @@ import React from "react";
 import PageContent from "../Page Content";
 import About from "../About";
 import Project from "../Project";
-//add contact
-//add resume
+import Contact from "../Footer";
+import Resume from "../Resume";
 
 function Page({ currentCategory }) {
   const renderCategory = () => {
@@ -12,8 +12,10 @@ function Page({ currentCategory }) {
         return <About />;
       case "Projects":
         return <Project />;
-      //add Contact
-      //add Resume
+      case "Contact Me":
+        return <Contact/>;
+      case "Resume":
+        return <Resume/>;
       default:
         return <About />;
     }

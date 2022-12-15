@@ -17,24 +17,34 @@ function Projects() {
       github: "https://github.com/william-chalk/run-buddy",
       live: "https://william-chalk.github.io/run-buddy/",
     },
-    // {
-    //   name: "Git it Done",
-    //   description: "Site where a end user can search for repos",
-    //   github: "https://github.com/william-chalk/git-it-done",
-    //   live: "https://william-chalk.github.io/git-it-done/",
-    // },
+    {
+      name: "Git it Done",
+      description: "Site where a end user can search for GitHub repos",
+      github: "https://github.com/william-chalk/git-it-done",
+      live: "https://william-chalk.github.io/git-it-done/",
+    },
+    {
+      name:"Taskinator",
+      description:"Site where a user can keep track of tasks and mark them as In Progress, and Completed",
+      github:"https://github.com/william-chalk/taskinator",
+      live:"https://william-chalk.github.io/taskinator/"
+    }
   ]);
+
 
   return (
     <div>
       <div className="flex-row">
         {projects.map((project, index) => (
-          <img
+          [<img
             src={require(`../../assets/${index}.JPG`)}
             alt={project.name}
             className="img-thumbnail mx-1"
             key={"f" + project.name}
-          />
+          />,
+        <p>{project.description}</p>,
+      <a href={project.github} alt={project.github}>GitHub</a>,
+    <a href={project.live} alt={project.github}>Live</a>]
         ))}
       </div>
     </div>
