@@ -1,19 +1,19 @@
 import React from "react";
 import PageContent from "../Page Content";
 import About from "../About";
-// import Project from "../Project";
+import Project from "../Project";
 //add contact
 //add resume
 
 function Page({ currentCategory }) {
   const renderCategory = () => {
     switch (currentCategory.name) {
-      case "about me":
+      case "About Me":
         return <About />;
-      //   case "projects":
-      //     return <Project />;
-      //add contact
-      //add resume
+      case "Projects":
+        return <Project />;
+      //add Contact
+      //add Resume
       default:
         return <About />;
     }

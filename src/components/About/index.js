@@ -5,13 +5,12 @@ function About() {
     <section className="my-5">
       <h1 id="about">My Story</h1>
       <div className="my-2">
-        <p>
-          Hey my name is William Chalk,{" "}
-          <span>
-            <a href="#projects">view my work</a>
-          </span>{" "}
-          below.
-        </p>
+        <pre>
+          Hey my name is William Chalk,{"\n"}view my work in the projects tab.
+          {"\n"}
+          If you enjoy what you see feel free to Contact Me,{"\n"}and view my
+          Resume. Thanks for stoping by!
+        </pre>
       </div>
     </section>
   );
