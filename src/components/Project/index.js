@@ -24,28 +24,36 @@ function Projects() {
       live: "https://william-chalk.github.io/git-it-done/",
     },
     {
-      name:"Taskinator",
-      description:"Site where a user can keep track of tasks and mark them as In Progress, and Completed",
-      github:"https://github.com/william-chalk/taskinator",
-      live:"https://william-chalk.github.io/taskinator/"
-    }
+      name: "Taskinator",
+      description:
+        "Site where a user can keep track of tasks and mark them as In Progress, and Completed",
+      github: "https://github.com/william-chalk/taskinator",
+      live: "https://william-chalk.github.io/taskinator/",
+    },
   ]);
-
 
   return (
     <div>
       <div className="flex-row">
-        {projects.map((project, index) => (
-          [<img
-            src={require(`../../assets/${index}.JPG`)}
-            alt={project.name}
-            className="img-thumbnail mx-1"
-            key={"f" + project.name}
-          />,
-        <p>{project.description}</p>,
-      <a href={project.github} alt={project.github}>GitHub</a>,
-    <a href={project.live} alt={project.github}>Live</a>]
-        ))}
+        {projects.map((project, index) => [
+          <div className="container">
+            <div className="card my-2">
+              <img
+                src={require(`../../assets/${index}.JPG`)}
+                alt={project.name}
+                className="img-thumbnail"
+                key={"f" + project.name}
+              />
+              <p className="my-3">{project.description}</p>
+              <a className="mx-2" href={project.github} alt={project.github}>
+                GitHub
+              </a>
+              <a href={project.live} alt={project.github}>
+                Live
+              </a>
+            </div>
+          </div>,
+        ])}
       </div>
     </div>
   );
