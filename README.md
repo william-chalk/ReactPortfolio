@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# React Portfolio
+
+# Usage
+- Portfolio created using React.js 
+
+# Installation
+```
+npm i
+```
+![portfolio](https://user-images.githubusercontent.com/108630160/207997056-3e09414f-ff58-4ce5-b8f8-1675582d5587.JPG)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
