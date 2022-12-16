@@ -1,6 +1,6 @@
 {
-  "homepage":"http://william-chalk.github.io/ReactPortfolio",
   "name": "react-portfolio",
+  "homepage":"http://william-chalk.github.io/ReactPortfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
