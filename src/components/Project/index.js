@@ -30,6 +30,13 @@ function Projects() {
       github: "https://github.com/william-chalk/taskinator",
       live: "https://william-chalk.github.io/taskinator/",
     },
+    {
+      name: "Monied",
+      description:
+        "Monied is a fundraising platform for nonprofit organizations. The goal is to help ambitious ideas be brought to life. Monied will allow users to create projects with donation goals, donate to projects, and keep track of their donations.",
+      github: "https://github.com/kristacannady/Monied",
+      live: "https://aqueous-scrubland-12058.herokuapp.com/",
+    },
   ]);
 
   return (
